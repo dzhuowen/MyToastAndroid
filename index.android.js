@@ -11,6 +11,8 @@ var {
   Text,
   View,
   Image,
+  TouchableHighlight,
+  MyToastAndroid,
 } = React;
 
 var MOCKED_MOVIES_DATA = [
@@ -18,6 +20,11 @@ var MOCKED_MOVIES_DATA = [
 ];
 
 var awesomeProject = React.createClass({
+
+  _onPressButton: function() {
+    MyToastAndroid.show('Show module', MyToastAndroid.SHORT);
+  },
+
   render: function() {
     var movie = MOCKED_MOVIES_DATA[0];
     return (
@@ -27,6 +34,9 @@ var awesomeProject = React.createClass({
           <Text style={styles.title}>{movie.title}</Text>
           <Text style={styles.year}>{movie.year}</Text>
         </View>
+        <TouchableHighlight onPress={this._onPressButton}>
+          <Text style={styles.title}>Toast</Text>
+        </TouchableHighlight>
       </View>
     );
   }
