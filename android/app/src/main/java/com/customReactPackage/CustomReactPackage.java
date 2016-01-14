@@ -1,6 +1,5 @@
 package com.customReactPackage;
 
-import com.facebook.react.modules.mytoast;
 import com.facebook.react.ReactPackage;
 import com.facebook.react.bridge.JavaScriptModule;
 import com.facebook.react.bridge.NativeModule;
@@ -15,7 +14,7 @@ import java.util.List;
 
 public class CustomReactPackage implements ReactPackage {
 
-    private Activity mActivity = null;
+  private Activity mActivity = null;
 
   public CustomReactPackage(Activity activity) {
       mActivity = activity;

@@ -1,4 +1,4 @@
-package com.facebook.react.modules.mytoast;
+package com.customReactPackage;
 
 import android.widget.Toast;
 

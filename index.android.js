@@ -12,9 +12,12 @@ var {
   View,
   Image,
   TouchableHighlight,
+  NativeModules,
 } = React;
 
-var MyToastAndroid = require('./MyToastAndroid');
+var {
+  MyToastAndroid,
+} = NativeModules;
 
 var MOCKED_MOVIES_DATA = [
   {title: 'Title', year: '2015', posters: {thumbnail: 'http://i.imgur.com/UePbdph.jpg'}},
